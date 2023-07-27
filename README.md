@@ -51,7 +51,7 @@ The inventory is updated `ansible-config-mgt/inventory/uat.yml` file with IP add
 
 <Web2-UAT-Server-Private-IP-Address> ansible_ssh_user='ec2-user' ansible_ssh_private_key_file='/home/ubuntu/.ssh/keypair.pem'
 ```
-In /etc/ansible/ansible.cfg file, we uncomment roles_path string and provide a full path to the roles directory `roles_path    = /home/ubuntu/ansible-config-mgt/roles`, so Ansible knows where to find configured roles.
+In /etc/ansible/ansible.cfg file, we uncomment roles_path string and provide a full path to the roles directory `roles_path = /home/ubuntu/ansible-config-mgt/roles`, so Ansible knows where to find configured roles.
 ![rolesconfig](./IMAGES/rolesconfig.PNG)
 
 In the tasks directory, I update the main.yml file with the following code. 
@@ -126,6 +126,11 @@ I run the playbook with the following command against the uat inventory..
 sudo ansible-playbook -i /home/ubuntu/ansible-config-mgt/inventory/uat.yml /home/ubuntu/ansible-config-mgt/playbooks/site.yml
 
 ```
+![code](./IMAGES/commit&merge.PNG)
+
+![code](./IMAGES/gitpush.PNG)
+
+![code](./IMAGES/jenkinsbuild.PNG)
 
 The sites can be seen to be up on the two webservers. 
 
