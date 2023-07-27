@@ -126,9 +126,10 @@ I run the playbook with the following command against the uat inventory..
 sudo ansible-playbook -i /home/ubuntu/ansible-config-mgt/inventory/uat.yml /home/ubuntu/ansible-config-mgt/playbooks/site.yml
 
 ```
-![code](./IMAGES/commit&merge.PNG)
 
 ![code](./IMAGES/gitpush.PNG)
+
+![code](./IMAGES/commit&merge.PNG)
 
 ![code](./IMAGES/jenkinsbuild.PNG)
 
